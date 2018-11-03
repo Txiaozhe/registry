@@ -74,7 +74,7 @@ function makeBundle(options = {}) {
     ...options
   };
 
-  const entryPoints = ["src/index.html" ];
+  const entryPoints = ["src/index.html"];
   if (!options.production) {
     entryPoints.push("src/test.html");
   }

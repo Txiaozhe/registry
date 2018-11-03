@@ -117,5 +117,5 @@ export const pages: Page[] = [
     path: "index.html",
     root: Home,
     route: /^\/(index.html)?$/
-  },
+  }
 ];
