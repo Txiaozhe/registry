@@ -15,21 +15,6 @@
 // tslint:disable:variable-name
 // This is the propelml.org website. It is used both server-side and
 // client-side for generating HTML.
-import { Component, h, render } from "preact";
-import { Home } from "./components/home";
-import * as db from "./db";
-import * as types from "./types";
-
-export interface Page {
-  title: string;
-  path: string;
-  root: any;
-  route: RegExp;
-}
-
-export function renderPage(p: Page): void {
-  render(h(p.root, null), document.body, document.body.children[0]);
-}
 
 export let firebaseUrls = [
   "https://www.gstatic.com/firebasejs/4.9.0/firebase.js",

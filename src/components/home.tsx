@@ -13,17 +13,13 @@
    limitations under the License.
  */
 import { h } from "preact";
-import { UserMenu } from "./menu";
 import { GlobalHeader } from "./header";
+import { UserMenu } from "./menu";
 
 // tslint:disable-next-line:variable-name
 export const Home = props => {
   return (
     <div class="index">
-      <GlobalHeader>
-        <UserMenu userInfo={props.userInfo} />
-      </GlobalHeader>
-      
         <div class="flex-row">
           <div class="flex-cell">
             <h2>Create Package</h2>
@@ -37,7 +33,6 @@ export const Home = props => {
             <input type="text" />
           </div>
         </div>
-
 
         <div class="flex-row">
           <div class="flex-cell">
